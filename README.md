@@ -5,3 +5,24 @@
 ###Windows下Python+Flask環境配置
 >參考教學:  [http://atelier-wini.blogspot.tw/2013/03/python-flask-2.html](http://atelier-wini.blogspot.tw/2013/03/python-flask-2.html)<br>
 >官方網站:  [http://flask.pocoo.org/docs/0.11/installation/#windows-easy-install](http://flask.pocoo.org/docs/0.11/installation/#windows-easy-install)<br>
+##
+###命令提示元
+>安裝好python 和 pip 之後，需要安裝Virtualenv。
+>###<ul>What is virturalenv
+>**virtualenv 也是一個 Python 套件，可以讓你建立、模擬不同情況下的工作環境**。比如說你可能會有一個工作環境是需要C程式的第一版，而另一個工作環境需要第二版，那你就可以建立兩種不同的虛擬工作環境（類似虛擬機器），這可以避免碰上太多不必要的變數，或是製造你需要的變數，來測試你寫的程式是否運作正常。<br>
+>##
+>安裝virtualenv<br><Br>
+>`sudo pip install virtualenv`
+>##
+>測試virtualenv是否可以正常運作<br><br>
+>`mkdir newproject`<br>`cd newproject`<br>`virtualenv venv`<br><br>
+>上述是建立了一個newproject的資料夾，然後把工作目錄切到newproject的路徑下，最後開啓虛擬的工作環境。需要輸入以下：<br><br>
+>`ven\scripts\activate` //for windows<br><br>
+>`. ven/bin/activate`//for Mac OS x and Linux<br><br>
+>##
+>啓用后，終端機會變成以 Venv 開頭，這就是正在使用虛擬工作環境的意思。
+>##
+>如果要離開虛擬工作環境的話（記得目錄要切到project資料夾）<br><br>
+>`venv\scripts\deactivate` //for Windows<br><br>
+>`. venv/bin/deacitvate` //for MAC OS X /LINUX<BR><BR>
+>##
